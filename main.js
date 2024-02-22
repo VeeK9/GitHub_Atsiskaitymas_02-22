@@ -1,9 +1,14 @@
 document.querySelectorAll('#mainBody button').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('#mainBody').classList.add('hidden');
+    const tab = `#${button.textContent.toLowerCase()}`;
+    document.querySelector(`${tab}`).classList.add('tabVisible');
+  })
+});
+
+document.querySelectorAll('.closeIcon').forEach(button => {
   button.addEventListener('click', e => {
-    document.querySelector('#mainBody').style.display = 'none';
-    const tab = `#${button.textContent.toLowerCase()}`
-    console.log(button.textContent.toLowerCase())
-    document.querySelector(`${tab}`).classList.remove('tabHidden')
-    document.querySelector(`${tab}`).classList.add('tabVisible')
-})
-})
+    button.parentElement.parentElement.classList.remove('tabVisible');
+    document.querySelector('#mainBody').classList.remove('hidden');
+  })
+});
