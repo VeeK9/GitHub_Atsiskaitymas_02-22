@@ -280,10 +280,10 @@ article {
   }
 
   #work > div > div > img {
-    object-position: 0 -30px;
+    object-position: 0 15%;
   }
 
   #about > div > div > img {
-    object-position: 0 -140px;
+    object-position: 0 70%;
   }
 }
