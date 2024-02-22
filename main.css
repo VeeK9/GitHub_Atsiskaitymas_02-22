@@ -161,6 +161,12 @@ article {
 
         > a {
           color: white;
+          text-decoration: dotted underline 1px;
+          text-underline-offset: 2px;
+    
+          &:hover {
+            color: rgba(255, 255, 255, 0.5);
+          }
         }
       }
 
@@ -180,6 +186,12 @@ article {
   
           > a {
             color: white;
+            text-decoration: dotted underline 1px;
+            text-underline-offset: 2px;
+      
+            &:hover {
+              color: rgba(255, 255, 255, 0.5);
+            }
           }
         }
 
